@@ -1,5 +1,6 @@
 ![Drag Racing](src/resources/images/logo.jpg)
 
+[![Build Status](https://travis-ci.com/davidfigueroar9/instacats.svg?branch=master)](https://travis-ci.com/davidfigueroar9/instacats) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/davidfigueroar9/mural/blob/master/LICENSE)
 ### `npm start`
 
 Runs the app in the development mode.<br>
