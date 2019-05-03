@@ -1,24 +1,17 @@
 import React from 'react';
+import IconLink from '../iconLink';
 import './styles.css';
 
 const Footer = (props) => (
   <div className="Footer-container">
     <div className="Footer">
-      <div className="Icon">
-        <i className="fas fa-home"/>
-      </div>
-      <div className="Icon">
-        <i className="fas fa-search"/>
-      </div>
+      <IconLink to="/" icon="fas fa-home" />
+      <IconLink to="/explore" icon="fas fa-search" />
       <div className="Icon">
         <i className="far fa-plus-square"/>
       </div>
-      <div className="Icon">
-        <i className="far fa-heart"/>
-      </div>
-      <div className="Icon">
-        <i className="far fa-user"/>
-      </div>
+      <IconLink to="/likes" icon="far fa-heart" />
+      <IconLink to="/profile" icon="far fa-user" />
     </div>
   </div>
 );
