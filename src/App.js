@@ -1,16 +1,19 @@
-import React from 'react';
-import Header from './components/header';
-import Counter from './components/counter';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Home, Likes, Profile, Explore } from './pages';
 import Footer from './components/footer';
-import './App.css';
-
 
 function App() {
   return (
-    <div className="App">
-     <Header title="Instacats"/>
-     <Footer />
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route path="/explore" component={Explore} />
+        <Route path="/likes" component={Likes} />
+        <Route path="/profile" component={Profile} />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
