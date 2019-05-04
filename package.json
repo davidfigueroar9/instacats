@@ -11,11 +11,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "set CI=true &&react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "./node_modules/.bin/eslint ./src/"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "eslint-config-airbnb": "^17.1.0"
   },
   "browserslist": {
     "production": [
