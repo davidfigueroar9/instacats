@@ -1,7 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Home, Likes, Profile, Explore } from './pages';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Footer from './components/footer';
+import {
+  Home, Likes, Profile, Explore,
+} from './pages';
 
 function App() {
   return (

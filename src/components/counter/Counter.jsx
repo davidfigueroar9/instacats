@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-
 class Counter extends Component {
-
   state = {
     count: 0,
   }
 
   increase = () => {
-    this.setState({ count: this.state.count + 1 });
+    const { count } = this.state;
+    this.setState({ count: count + 1 });
   }
 
   decrease = () => {
-    this.setState({ count: this.state.count - 1 });
+    const { count } = this.state;
+    this.setState({ count: count - 1 });
   }
 
   render() {
+    const { count } = this.state;
     return (
       <div className="counter">
-        <button onClick={this.decrease}>-</button>
-        {this.state.count}
-        <button onClick={this.increase}>+</button>
+        <button type="button" onClick={this.decrease}>-</button>
+        { count }
+        <button type="button" onClick={this.increase}>+</button>
       </div>
     );
   }
-
 }
 
 export default Counter;
