@@ -5,8 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
-  
+
 .Footer .Icon {
   font-size: 24px;
 }
