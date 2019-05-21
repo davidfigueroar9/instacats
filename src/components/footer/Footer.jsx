@@ -8,7 +8,7 @@ const Footer = () => (
       <IconLink to="/" icon="fas fa-home" />
       <IconLink to="/explore" icon="fas fa-search" />
       <div className="Icon">
-        <i className="far fa-plus-square"/>
+        <i className="far fa-plus-square" />
       </div>
       <IconLink to="/likes" icon="far fa-heart" />
       <IconLink to="/profile" icon="far fa-user" />

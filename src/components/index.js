@@ -1,5 +1,5 @@
-import Counter from './counter';
-import Footer from './footer';
+import Counter from './Counter';
+import Footer from './Footer';
 import IconLink from './IconLink';
 import UserImage from './UserImage';
 
