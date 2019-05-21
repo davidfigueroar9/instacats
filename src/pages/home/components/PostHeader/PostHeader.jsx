@@ -1,17 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { UserImage } from '../../../../components';
 import './styles.css';
 
-const PostHeader = () => (
+const PostHeader = ({ img, name }) => (
   <div className="PostHeader">
-    <div>
-      <div>
-        <UserImage src="https://dummyimage.com/50x50/000/fff" />
-      </div>
-      <div>
-        <span className="user-name"> gisselle </span>
-      </div>
+    <div className="PostHeader-user">
+      <UserImage src={img} />
+      <span className="user-name">{name}</span>
     </div>
+
     <div className="icon-position">
       <div>
         <i className="fas fa-ellipsis-h" />
@@ -19,5 +17,10 @@ const PostHeader = () => (
     </div>
   </div>
 );
+
+PostHeader.propTypes = {
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 export default PostHeader;

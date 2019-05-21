@@ -1,11 +1,26 @@
 import React from 'react';
-import { Header, PostHeader } from './components';
+import { Header, Post } from './components';
+import './styles.css';
 
+const users = [
+  {
+    img: 'https://dummyimage.com/50x50/000/fff',
+    name: 'Gisselle Diaz',
+  },
+  {
+    img: 'https://dummyimage.com/50x50/000/fff',
+    name: 'David Figueroa',
+  },
+];
 
 const Home = () => (
-  <div>
+  <div className="Home">
     <Header />
-    <PostHeader />
+    {
+      users.map((user, index) => (
+        <Post key={index} user={user} />
+      ))
+    }
   </div>
 );
 
