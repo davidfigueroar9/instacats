@@ -1,8 +1,8 @@
 import React from 'react';
-import IconLink from '../iconLink';
+import IconLink from '../IconLink';
 import './styles.css';
 
-const Footer = (props) => (
+const Footer = () => (
   <div className="Footer-container">
     <div className="Footer">
       <IconLink to="/" icon="fas fa-home" />
