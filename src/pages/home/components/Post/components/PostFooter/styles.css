@@ -1,7 +1,6 @@
 .PostFooter {
   height: 44px;
   padding: 0 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
   display: flex;
   justify-content: space-between;
   align-items: center;

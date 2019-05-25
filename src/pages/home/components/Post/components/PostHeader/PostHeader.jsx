@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { UserImage } from '../../../../components';
+import { UserImage } from '../../../../../../components';
 import './styles.css';
 
 const PostHeader = ({ img, name }) => (
