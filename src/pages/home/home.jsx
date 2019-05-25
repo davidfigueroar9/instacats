@@ -5,8 +5,12 @@ import './styles.css';
 const posts = [
   {
     id: '1',
+    caption: 'Tu envidia me fortalece',
     content: [
-      { src: 'https://picsum.photos/400/300?random=1' },
+      {
+        id: '1',
+        src: 'https://picsum.photos/400/300?random=1',
+      },
     ],
     user: {
       id: '1',
@@ -32,7 +36,10 @@ const posts = [
   {
     id: '2',
     content: [
-      { src: 'https://picsum.photos/400/300?random=2' },
+      {
+        id: '1',
+        src: 'https://picsum.photos/400/300?random=2',
+      },
     ],
     user: {
       id: '2',

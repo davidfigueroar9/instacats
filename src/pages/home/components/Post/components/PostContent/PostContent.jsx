@@ -3,7 +3,7 @@ import './styles.css';
 
 const PostContent = ({ content }) => (
   content.map(postContent => (
-    <img className="PostContent" alt="imagen" src={postContent.src} />
+    <img key={postContent.id} className="PostContent" alt="imagen" src={postContent.src} />
   ))
 );
 

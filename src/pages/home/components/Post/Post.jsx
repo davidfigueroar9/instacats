@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PostHeader from './components/PostHeader';
-import PostFooter from './components/PostFooter';
-import PostContent from './components/PostContent';
-import PostLikes from './components/PostLikes';
+import {
+  PostCaption,
+  PostContent,
+  PostFooter,
+  PostHeader,
+  PostLikes,
+} from './components';
 import './styles.css';
 
 
@@ -16,6 +19,7 @@ const Post = ({ post }) => (
     <PostContent content={post.content} />
     <PostFooter />
     <PostLikes likes={post.likes} />
+    <PostCaption caption={post.caption} user={post.user.username} />
   </div>
 );
 
