@@ -2,16 +2,58 @@ import React from 'react';
 import { Header, Post } from './components';
 import './styles.css';
 
-const users = [
+const posts = [
   {
     id: '1',
-    img: 'https://dummyimage.com/50x50/000/fff',
-    name: 'Gisselle Diaz',
+    content: [
+      { src: 'https://picsum.photos/400/300?random=1' },
+    ],
+    user: {
+      id: '1',
+      username: 'gissellevdv',
+      name: 'Gisselle Diaz',
+      image_url: 'https://dummyimage.com/600x400/000/fff',
+    },
+    location: '',
+    likes: 1233,
+    comments: [
+      {
+        user: {
+          id: '1',
+          username: 'gissellevdv',
+          name: 'Gisselle Diaz',
+          image: 'https://dummyimage.com/600x400/000/fff',
+        },
+        comment: 'Soo nice!',
+        likes: 10,
+      },
+    ],
   },
   {
     id: '2',
-    img: 'https://dummyimage.com/50x50/000/fff',
-    name: 'David Figueroa',
+    content: [
+      { src: 'https://picsum.photos/400/300?random=2' },
+    ],
+    user: {
+      id: '2',
+      username: 'davidfigueroar9',
+      name: 'David Figueroa',
+      image_url: 'https://loremflickr.com/640/360',
+    },
+    location: '',
+    likes: 140,
+    comments: [
+      {
+        user: {
+          id: '2',
+          username: 'davidfigueroar9',
+          name: 'David Figueroa',
+          image: 'https://loremflickr.com/640/360',
+        },
+        comment: 'Que buena foto!',
+        likes: 5,
+      },
+    ],
   },
 ];
 
@@ -19,8 +61,8 @@ const Home = () => (
   <div className="Home">
     <Header />
     {
-      users.map(user => (
-        <Post key={user.id} user={user} />
+      posts.map(post => (
+        <Post key={post.id} post={post} />
       ))
     }
   </div>
