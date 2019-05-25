@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PostHeader from '../PostHeader';
+import PostHeader from '../../PostHeader';
+import PostFooter from '../PostFooter/PostFooter';
 import './styles.css';
+
 
 const Post = ({ user }) => (
   <div className="Post">
@@ -9,6 +11,7 @@ const Post = ({ user }) => (
       img={user.img}
       name={user.name}
     />
+    <PostFooter />
   </div>
 );
 
