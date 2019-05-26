@@ -1,0 +1,10 @@
+.PostCaption {
+  color: #262626;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.PostCaption .username {
+  font-weight: 600;
+  color: #262626;
+}
