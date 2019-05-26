@@ -1,0 +1,10 @@
+.PostComments {
+  font-size: 14px;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.PostComments .username {
+  font-weight: 600;
+  color: #262626;
+}

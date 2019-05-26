@@ -1,7 +1,9 @@
-import React from 'react';
-import { Header, Post } from './components';
+import React, { Component } from 'react';
+import axios from 'axios';
+import { Header, Post, PlaceHolder } from './components';
 import './styles.css';
 
+<<<<<<< Updated upstream
 const posts = [
   {
     id: '1',
@@ -49,23 +51,70 @@ const posts = [
           username: 'davidfigueroar9',
           name: 'David Figueroa',
           image: 'https://loremflickr.com/640/360',
-        },
-        comment: 'Que buena foto!',
-        likes: 5,
-      },
-    ],
-  },
-];
+=======
+class Home extends Component {
+  state = {
+    posts: [],
+    loading: false,
+  }
 
-const Home = () => (
-  <div className="Home">
-    <Header />
-    {
-      posts.map(post => (
-        <Post key={post.id} post={post} />
-      ))
-    }
-  </div>
-);
+  componentDidMount() {
+    this.setState({ loading: true });
+    axios.get('https://rest-user.herokuapp.com/posts').then((response) => {
+      this.setState(
+        {
+          posts: response.data.posts.map(post => ({
+            // eslint-disable-next-line no-underscore-dangle
+            id: post._id,
+            caption: post.caption,
+            content: post.content.map(c => ({
+              src: c.src,
+              // eslint-disable-next-line no-underscore-dangle
+              id: c._id,
+            })),
+            user: {
+              // eslint-disable-next-line no-underscore-dangle
+              id: post.user._id,
+              username: post.user.username,
+              name: post.user.name,
+              image_url: post.user.image_url,
+            },
+            location: post.location,
+            likes: post.likes,
+            comments: post.comment,
+          })),
+          loading: false,
+>>>>>>> Stashed changes
+        },
+      );
+    });
+  }
+
+  render() {
+    const { posts, loading } = this.state;
+
+    // if (loading) return 'Loading...';
+    return (
+      <div className="Home">
+        <Header />
+        {
+          loading && (
+            <div>
+              <PlaceHolder />
+              <PlaceHolder />
+              <PlaceHolder />
+              <PlaceHolder />
+            </div>
+          )
+        }
+        {
+          posts.map(post => (
+            <Post key={post.id} post={post} />
+          ))
+        }
+      </div>
+    );
+  }
+}
 
 export default Home;

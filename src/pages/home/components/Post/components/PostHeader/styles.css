@@ -19,9 +19,18 @@
 }
 
 .PostHeader .user-name {
-  padding: 10px;
+  font-weight: 600;
+  color: #262626;
+  font-size: 14px;
 }
 
 .PostHeader .icon-position {
   justify-content: flex-end;
+}
+
+.PostHeader .user-info {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }

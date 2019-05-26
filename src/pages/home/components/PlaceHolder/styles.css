@@ -1,0 +1,194 @@
+.PostPlaceHolder .PostPlaceHolderHeader {
+  height: 50px;
+  background: #ffffff;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.PostPlaceHolder .PostPlaceHolderImage {
+  height: 300px;
+}
+
+.PostPlaceHolder .PostPlaceHolderUserImage {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.PostPlaceHolder .PostPlaceHolderUserName {
+  height: 15px;
+  width: 100px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+
+.animated-background {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+  background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  -webkit-background-size: 800px 104px;
+  background-size: 800px 104px;
+  height: 96px;
+  position: relative;
+}
+
+/* 
+.container {
+  width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container .placeload {
+  background: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  position: relative;
+  margin-top: 30%;
+  transform: translateY(-50%);
+}
+
+.container .placeload .image-placeholder {
+  width: 100%;
+  margin-top: 20px;
+  height: 250px;
+}
+
+.container .placeload .placeholder-footer {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .placeload .placeholder-footer .footer-block {
+  width: 100%;
+  height: 100%;
+  min-height: 20px;
+}
+
+.container .placeload .placeholder-footer .content-shape {
+  height: 8px;
+  margin-bottom: 8px;
+}
+
+.container .placeload .placeholder-footer .content-shape:first-child {
+  width: 32%;
+}
+
+.container .placeload .placeholder-footer .content-shape:first-child:nth-child(2) {
+  width: 24%;
+}
+
+.container .placeload .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container .placeload .header .img {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.container .placeload .header .header-content {
+  margin-left: 20px;
+  width: 100%;
+  
+}
+
+.container .placeload .header .header-content .content-shape {
+  height: 8px;
+  margin-bottom: 8px;
+}
+
+.container .placeload .header .header-content .content-shape:first-child {
+  width: 80%;
+}
+
+.container .placeload .header .header-content .content-shape:nth-child(2) {
+  width: 60%;
+}
+
+.loads {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeload;
+  animation-name: placeload;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: #dddddd;
+  background: -webkit-linear-gradient(
+    left,
+    #eeeeee,
+    #dddddd,
+  );
+  background: linear-gradient(top right, #eeeeee, #dddddd);
+  -webkit-background-size: 800px 104px;
+  background-size: 1200px 104px;
+  position: relative;
+}
+
+@-webkit-keyframes placeload{
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeload {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+ */
