@@ -1,11 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-<<<<<<< Updated upstream
-import PostHeader from './components/PostHeader';
-import PostFooter from './components/PostFooter';
-import PostContent from './components/PostContent';
-import PostLikes from './components/PostLikes';
-=======
 import {
   PostCaption,
   PostContent,
@@ -14,9 +8,7 @@ import {
   PostLikes,
   PostComments,
 } from './components';
->>>>>>> Stashed changes
 import './styles.css';
-
 
 const Post = ({ post }) => (
   <div className="Post">
@@ -28,11 +20,8 @@ const Post = ({ post }) => (
     <PostContent content={post.content} />
     <PostFooter />
     <PostLikes likes={post.likes} />
-<<<<<<< Updated upstream
-=======
     <PostCaption caption={post.caption} user={post.user.username} />
     <PostComments comments={post.comments} />
->>>>>>> Stashed changes
   </div>
 );
 

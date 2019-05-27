@@ -5,7 +5,6 @@ import PostHeader from './PostHeader';
 import PostLikes from './PostLikes';
 import PostComments from './PostComments';
 
-
 export {
   PostCaption,
   PostContent,
