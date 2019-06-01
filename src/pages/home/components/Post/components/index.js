@@ -3,7 +3,7 @@ import PostContent from './PostContent';
 import PostFooter from './PostFooter';
 import PostHeader from './PostHeader';
 import PostLikes from './PostLikes';
-
+import PostComments from './PostComments';
 
 export {
   PostCaption,
@@ -11,6 +11,7 @@ export {
   PostFooter,
   PostHeader,
   PostLikes,
+  PostComments,
 };
 
 export default {
@@ -19,4 +20,5 @@ export default {
   PostFooter,
   PostHeader,
   PostLikes,
+  PostComments,
 };

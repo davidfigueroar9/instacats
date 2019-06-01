@@ -11,7 +11,7 @@ const PostCaption = ({ caption, user }) => {
       <span className="username">
         {user}
       </span>
-      {caption}
+      {` ${caption}`}
     </div>
   );
 };
