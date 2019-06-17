@@ -1,0 +1,74 @@
+.login {
+  background-color: #fafafa;
+  padding: 30px;
+  font-size: 0.9rem;
+}
+
+.login .content {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  padding: 10px 0;
+  margin: auto;
+  width: 350px;
+}
+
+.login .content .icon {
+  font-family: 'Norican', cursive;
+  font-size: 32px;
+  text-align: center;
+}
+
+.login .content .separator {
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+
+.login .content .separator .line {
+  flex: 1;
+  border-bottom: 1px solid #efefef;
+}
+
+.login .content .content-form {
+  width: 80%;
+  margin: auto;
+}
+
+.login .content .content-form .form {
+}
+
+.login .content .content-form .form .input-content {
+  padding: 0px 10px 5px 10px;
+}
+
+.login .content .content-form .form .input-content .input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.login .content .content-form .form .btn-content {
+  padding: 0px 10px 5px 10px;
+}
+
+.login .content .content-form .form .btn-content .button {
+  width: 100%;
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.login .content .content-form .form .check-content {
+  padding: 20px 10px 20px 10px;
+}
+
+.login .content .content-form .password {
+  padding: 10px;
+  color: #3897f0;
+  text-align: center;
+}

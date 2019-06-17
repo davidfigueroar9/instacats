@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Footer } from './components';
 import {
-  Home, Likes, Profile, Explore,
+  Home, Likes, Profile, Explore, Login,
 } from './pages';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <Route path="/explore" component={Explore} />
         <Route path="/likes" component={Likes} />
         <Route path="/profile" component={Profile} />
+        <Route path="/login" component={Login} />
         <Footer />
       </div>
     </Router>
